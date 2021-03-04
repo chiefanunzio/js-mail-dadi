@@ -8,10 +8,10 @@
 </head>
 
 <body>
-              <!-- inserisci la tua email e vediamo chi sei -->
 
-  <h1 id="test"></h1>
-  <script>
+  <h1 id="test">hello</h1>
+  <!--inserisci la tua email e vediamo chi sei -->
+  <!-- <script>
     var emailIndex = ['nunzio@gmail.com', 'nunzio@gmail.it', 'nunzio@gmail.net'];
     var emailUtente = prompt('inserisci la tua email');
 
@@ -21,6 +21,21 @@
         document.getElementById('test').innerHTML = 'Email Corretta';
       }
     }
+  </script> -->
+
+  <script>
+    var min = 1;
+    var max = 7 - min;
+    var rndNunzio = Math.floor(Math.random() * max  + min );
+    var rndIa = Math.floor(Math.random() * max  + min );
+    if(rndNunzio > rndIa){
+      console.log('nunzio hai vinto');
+    }else if(rndNunzio < rndIa){
+      console.log('nunzio hai perso');
+    }else{
+      console.log('spiacente hai pareggiato');
+    }
+
   </script>
 
 </body>
