@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>email-dadi-js</title>
+</head>
+
+<body>
+              <!-- inserisci la tua email e vediamo chi sei -->
+
+  <h1 id="test"></h1>
+  <script>
+    var emailIndex = ['nunzio@gmail.com', 'nunzio@gmail.it', 'nunzio@gmail.net'];
+    var emailUtente = prompt('inserisci la tua email');
+
+    for (var mail = 0; mail < emailIndex.length; mail++) {
+      var login = emailIndex[mail];
+      if (login == emailUtente) {
+        document.getElementById('test').innerHTML = 'Email Corretta';
+      }
+    }
+  </script>
+
+</body>
+
+</html>
