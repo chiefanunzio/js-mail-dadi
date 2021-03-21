@@ -9,7 +9,11 @@
 
 <body>
 
-  <h1 id="test">hello</h1>
+  <!-- <h1 id="test">login</h1> -->
+
+  <h2 id="res"></h2>
+
+
   <!--inserisci la tua email e vediamo chi sei -->
   <!-- <script>
     var emailIndex = ['nunzio@gmail.com', 'nunzio@gmail.it', 'nunzio@gmail.net'];
@@ -24,18 +28,19 @@
   </script> -->
 
   <script>
-    var min = 1;
-    var max = 7 - min;
-    var rndNunzio = Math.floor(Math.random() * max  + min );
-    var rndIa = Math.floor(Math.random() * max  + min );
-    if(rndNunzio > rndIa){
-      console.log('nunzio hai vinto');
-    }else if(rndNunzio < rndIa){
-      console.log('nunzio hai perso');
-    }else{
-      console.log('spiacente hai pareggiato');
+    function getrandom(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
+    var rndNunzio = getrandom(1, 6)
+    var rndIa = getrandom(1, 6)
+    if (rndNunzio > rndIa) {
+      document.getElementById('res').innerHTML = ('nunzio hai vinto');
+    } else if (rndNunzio < rndIa) {
+      document.getElementById('res').innerHTML = ('nunzio hai perso');
+    } else {
+      document.getElementById('res').innerHTML = ('spiacente hai pareggiato');
+    }
   </script>
 
 </body>

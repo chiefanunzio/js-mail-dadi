@@ -5,6 +5,8 @@
 }
 
 body{
+  width: 60%;
+  margin: auto;
   color: #ddd;
   background-image: radial-gradient(#2a35b0 100%, #fff 0%);
   height: 100vh;
